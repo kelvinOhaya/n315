@@ -1,0 +1,13 @@
+.footer {
+  position: relative;
+  padding: 16px 4rem;
+  width: 100%;
+  background: var(--p300);
+  color: var(--accent);
+  display: flex;
+  justify-content: space-between;
+
+  i {
+    margin: 0 8px;
+  }
+}

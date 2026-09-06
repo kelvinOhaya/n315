@@ -1,0 +1,36 @@
+.contact {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+  .cinput-container {
+    p {
+      font-size: 1.3rem;
+    }
+  }
+  .cinput {
+    border: 2px solid var(--p300);
+    background: var(--p200);
+    color: var(--accent);
+    padding: 8px 16px;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    width: 100%;
+  }
+
+  .submit {
+    background: var(--p300);
+    padding: 8px 16px;
+    color: var(--accent);
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+  }
+}

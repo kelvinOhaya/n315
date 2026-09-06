@@ -1,0 +1,1 @@
+{ "name ": "startsass ", "version ": "1.0.0 ", "description ": "This is a simple sass project ", "main ": "index.js ", "scripts ": { "serve ": "live-server ", "compile:sass ": "sass scss/styles.scss css/styles.css -w --no-source-map " }, "keywords ": [], "author ": "Kelvin Ohaya ", "license ": "ISC ", "type ": "commonjs ", "devDependencies ": { "sass ": "^1.103.1 " } }

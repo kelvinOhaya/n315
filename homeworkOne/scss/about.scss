@@ -1,0 +1,40 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .description-and-image {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    img {
+      order: 0;
+      min-width: 300px;
+      border-radius: 15px;
+      border: 2px solid var(--p300);
+    }
+  }
+  .skill-container {
+    .skill-title {
+      margin-top: 16px;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+    .skill-logos {
+      display: flex;
+      border: 2px solid var(--p300);
+      border-radius: 15px;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 16px;
+
+      i {
+        width: 4;
+        height: 4;
+      }
+    }
+  }
+}
