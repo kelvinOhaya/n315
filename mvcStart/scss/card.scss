@@ -1,0 +1,32 @@
+.card {
+  width: 300px;
+  padding: 20px;
+  background: #eee;
+  margin-bottom: 50px;
+
+  &__image {
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 24px;
+  }
+
+  &__text {
+    font-size: 16px;
+  }
+
+  &__button {
+    padding: 10px 20px;
+    border: none;
+
+    &--primary {
+      background: #007bff;
+      color: #fff;
+    }
+    &--secondary {
+      background: #44b996;
+      color: #fff;
+    }
+  }
+}
