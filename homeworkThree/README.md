@@ -13,7 +13,7 @@ A five-page, dynamically rendered website introducing reasons to watch _RE:ZERO_
 ## Links
 
 - [Live website](https://in-info-web4.luddy.indianapolis.iu.edu/~kelohaya/homeworkThree/)
-- [GitHub repository](https://github.com/kelvinOhaya/n315/homeworkThree)
+- [GitHub repository](https://github.com/kelvinOhaya/n315/tree/main/homeworkThree)
 
 ## Run locally
 
