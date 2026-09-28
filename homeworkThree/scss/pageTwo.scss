@@ -1,0 +1,18 @@
+.pageTwo {
+  color: white;
+  .pgTwoBg {
+    background-image: url(../images/seasonThree.jpeg);
+  }
+  .title {
+    margin-left: 64px;
+    margin-top: 32px;
+  }
+  .description {
+    position: absolute;
+    bottom: 100px;
+    right: 256px;
+    width: 300px;
+    font-size: larger;
+    font-weight: bold;
+  }
+}

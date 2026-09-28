@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 16px;
+}
+
+#callback {
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  width: 300px;
+  padding: 20px;
+  background: #eee;
+  margin-bottom: 50px;
+  border-radius: 12px;
+  box-shadow: 0 11px 7px 0 rgba(0, 0, 0, 0.19), 0 13px 25px 0 rgba(0, 0, 0, 0.3);
+}
+.card__image {
+  width: 100%;
+  border-radius: 12px;
+  border: 2px solid lightgray;
+}
+.card__title {
+  font-size: 24px;
+}
+.card__text {
+  font-size: 16px;
+}
+.card__button {
+  padding: 10px 20px;
+  border: none;
+}
+.card__button--primary {
+  background: #007bff;
+  color: #fff;
+}
+.card__button--secondary {
+  background: #44b996;
+  color: #fff;
+}
+
+.relativeContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:root {
+  --bg: #1c1c1c;
+  --text: #f5f5f5;
+  --text-hover: #74dbbc;
+}
+
+nav {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-size: large;
+  padding: 0 32px;
+  z-index: 999;
+}
+nav a {
+  text-decoration: none;
+  color: var(--text);
+  transition: transform 0.2s ease-out;
+  font-size: larger;
+}
+nav a:hover {
+  cursor: pointer;
+  color: var(--text-hover);
+  transform: translateY(-3px);
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.container .bgImg {
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+}
+.container .darkBG {
+  background-color: rgba(0, 0, 0, 0.4392156863);
+  padding: 8px;
+  border-radius: 8px;
+  width: fit-content;
+  border: 1px solid rgb(194, 194, 194);
+}
+
+.pageOne .titleAndLogo {
+  display: flex;
+  height: fit-content;
+  gap: 0;
+  justify-content: start;
+  padding-left: 16vw;
+  flex-direction: column;
+  color: black;
+  width: 100%;
+  position: absolute;
+  top: 64px;
+}
+.pageOne .titleAndLogo .title {
+  font-size: 1.5rem;
+}
+.pageOne .titleAndLogo .logo {
+  margin-top: -30px;
+  height: 10rem;
+  width: fit-content;
+}
+.pageOne .bgImg {
+  background-image: url(../images/amazing_guy.webp);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.pageTwo {
+  color: white;
+}
+.pageTwo .pgTwoBg {
+  background-image: url(../images/seasonThree.jpeg);
+}
+.pageTwo .title {
+  margin-left: 64px;
+  margin-top: 32px;
+}
+.pageTwo .description {
+  position: absolute;
+  bottom: 100px;
+  right: 256px;
+  width: 300px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.pageThree {
+  color: white;
+}
+.pageThree .ottoBG {
+  background-image: url(../images/otto_goat.png);
+}
+.pageThree .title {
+  margin-left: 64px;
+  margin-top: 32px;
+}
+.pageThree .description {
+  position: absolute;
+  top: 128px;
+  left: 64px;
+  width: 460px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.pageFour {
+  color: white;
+  background: var(--bg);
+}
+.pageFour .title {
+  margin-left: 64px;
+  margin-top: 32px;
+}
+.pageFour .description {
+  position: absolute;
+  top: 128px;
+  left: 64px;
+  width: 460px;
+  font-size: larger;
+  font-weight: bold;
+}
+.pageFour .hero {
+  position: absolute;
+  height: 89%;
+  right: 300px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.pageFive {
+  color: white;
+}
+.pageFive .conclusionBG {
+  background-image: url(../images/conclusion.png);
+}
+.pageFive .title {
+  margin-left: 64px;
+  margin-top: 32px;
+}
+.pageFive .description {
+  position: absolute;
+  top: 128px;
+  left: 64px;
+  width: 460px;
+  font-size: larger;
+  font-weight: bold;
+}
+.pageFive iframe {
+  position: absolute;
+  bottom: 64px;
+  right: 240px;
+  width: 70%;
+  height: 300px;
+}
+.pageFive .darkBG {
+  background-color: black;
+}

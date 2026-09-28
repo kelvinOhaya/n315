@@ -1,0 +1,18 @@
+.pageThree {
+  color: white;
+  .ottoBG {
+    background-image: url(../images/otto_goat.png);
+  }
+  .title {
+    margin-left: 64px;
+    margin-top: 32px;
+  }
+  .description {
+    position: absolute;
+    top: 128px;
+    left: 64px;
+    width: 460px;
+    font-size: larger;
+    font-weight: bold;
+  }
+}

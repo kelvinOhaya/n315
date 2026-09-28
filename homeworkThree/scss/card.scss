@@ -1,0 +1,38 @@
+.card {
+  width: 300px;
+  padding: 20px;
+  background: #eee;
+  margin-bottom: 50px;
+  border-radius: 12px;
+  box-shadow:
+    0 11px 7px 0 rgba(0, 0, 0, 0.19),
+    0 13px 25px 0 rgba(0, 0, 0, 0.3);
+
+  &__image {
+    width: 100%;
+    border-radius: 12px;
+    border: 2px solid lightgray;
+  }
+
+  &__title {
+    font-size: 24px;
+  }
+
+  &__text {
+    font-size: 16px;
+  }
+
+  &__button {
+    padding: 10px 20px;
+    border: none;
+
+    &--primary {
+      background: #007bff;
+      color: #fff;
+    }
+    &--secondary {
+      background: #44b996;
+      color: #fff;
+    }
+  }
+}

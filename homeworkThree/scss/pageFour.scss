@@ -1,0 +1,26 @@
+.pageFour {
+  color: white;
+  background: var(--bg);
+  .title {
+    margin-left: 64px;
+    margin-top: 32px;
+  }
+  .description {
+    position: absolute;
+    top: 128px;
+    left: 64px;
+    width: 460px;
+    font-size: larger;
+    font-weight: bold;
+  }
+  .hero {
+    position: absolute;
+    height: 89%;
+    right: 300px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+  }
+}
