@@ -119,15 +119,11 @@ export function handleSignupSubmit(form) {
   clearFormFeedback(feedback);
 
   const blankFields = Object.fromEntries(
-    Object.entries(values).map(([key, val]) => [key, isBlank(val)])
+    Object.entries(values).map(([key, val]) => [key, isBlank(val)]),
   );
 
   if (Object.values(blankFields).some(Boolean)) {
-    showFormFeedback(
-      feedback,
-      "error",
-      "Please complete all required fields."
-    );
+    showFormFeedback(feedback, "error", "Please complete all required fields.");
     markInvalid(form, blankFields);
     return;
   }
@@ -142,7 +138,7 @@ export function handleSignupSubmit(form) {
     showFormFeedback(
       feedback,
       "error",
-      "Password must be at least 8 characters."
+      "Password must be at least 8 characters.",
     );
     markInvalid(form, { password: true, confirmPassword: true });
     return;
@@ -165,13 +161,11 @@ export function handleSignupSubmit(form) {
   showFormFeedback(
     feedback,
     "success",
-    "Account created successfully! Redirecting..."
+    "Account created successfully! Redirecting...",
   );
-  form
-    .querySelectorAll("input, button")
-    .forEach((el) => (el.disabled = true));
+  form.querySelectorAll("input, button").forEach((el) => (el.disabled = true));
 
   setTimeout(() => {
-    location.hash = "home";
+    location.hash = "shop";
   }, 900);
 }

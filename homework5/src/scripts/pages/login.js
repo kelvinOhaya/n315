@@ -82,11 +82,7 @@ export function handleLoginSubmit(form) {
   clearFormFeedback(feedback);
 
   if (isBlank(email) || isBlank(password)) {
-    showFormFeedback(
-      feedback,
-      "error",
-      "Please complete all required fields."
-    );
+    showFormFeedback(feedback, "error", "Please complete all required fields.");
     markInvalid(form, { email: isBlank(email), password: isBlank(password) });
     return;
   }
@@ -107,11 +103,9 @@ export function handleLoginSubmit(form) {
   }
 
   showFormFeedback(feedback, "success", "You have logged in successfully.");
-  form
-    .querySelectorAll("input, button")
-    .forEach((el) => (el.disabled = true));
+  form.querySelectorAll("input, button").forEach((el) => (el.disabled = true));
 
   setTimeout(() => {
-    location.hash = "home";
+    location.hash = "shop";
   }, 900);
 }

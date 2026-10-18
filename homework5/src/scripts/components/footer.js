@@ -20,7 +20,7 @@ export function renderFooter() {
         <div class="info-section">
             <h1 class="info-title" style="margin-top: 40px;">EXPLORE</h1>
             <div class="links">
-                <a href="#home">Home</a>
+                <a href="#shop">Shop</a>
                 <a href="#shop">Shop all Gear</a>
                 <a href="#adventure-guides">Adventure Guides</a>
                 <a href="#about">About Us</a>

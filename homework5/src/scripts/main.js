@@ -2,26 +2,23 @@ import "../scss/styles.scss";
 import { pages } from "./pages/pages";
 import { logout } from "./auth";
 import { showToast } from "./components/toast";
+import { clearFormFeedback } from "./utils/formFeedback";
 import { handleLoginSubmit } from "./pages/login";
 import { handleSignupSubmit } from "./pages/signup";
 const app = document.getElementById("app");
 
 function getRoute() {
-  // location.hash includes the leading "#" (e.g. "#about"), so strip it.
-  // Default to "home" when there's no hash at all (e.g. "/" or "/index.html").
-  return location.hash.slice(1) || "home";
+  return location.hash.slice(1) || "shop";
 }
 
 function render() {
   const route = getRoute();
-  const page = pages[route] ?? pages["home"];
+  const page = pages[route] ?? pages["shop"];
   app.innerHTML = page();
 }
 
 window.addEventListener("hashchange", render);
 
-// Delegated click handling for actions that don't map to a route change
-// (e.g. logging out), since app.innerHTML is replaced on every render.
 app.addEventListener("click", (event) => {
   const trigger = event.target.closest("[data-action]");
   if (!trigger) return;
@@ -33,6 +30,11 @@ app.addEventListener("click", (event) => {
     logout();
     render();
     showToast("You have logged out successfully.", "success");
+  } else if (action === "toggle-menu") {
+    const menu = document.getElementById("mobile-menu");
+    const isOpen = menu.classList.toggle("mobile-menu--open");
+    menu.hidden = !isOpen;
+    trigger.setAttribute("aria-expanded", String(isOpen));
   }
 });
 
@@ -50,5 +52,18 @@ app.addEventListener("submit", (event) => {
   }
 });
 
-render();
+// Clear a field's error state the moment the user starts correcting it,
+// instead of leaving a stale warning on screen until the next submit.
+app.addEventListener("input", (event) => {
+  const input = event.target;
+  if (!input.classList.contains("invalid")) return;
 
+  input.classList.remove("invalid");
+
+  const form = input.closest("form[data-form]");
+  if (!form || form.querySelector("input.invalid")) return;
+
+  clearFormFeedback(form.querySelector(".form-feedback"));
+});
+
+render();

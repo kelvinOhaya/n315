@@ -70,6 +70,10 @@
   background: var(--lightGrey);
   color: var(--black);
 
+  &[hidden] {
+    display: none;
+  }
+
   &--success {
     background: rgba(27, 67, 50, 0.08);
     color: var(--green);
