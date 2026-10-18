@@ -59,7 +59,6 @@ export function renderFooter() {
         <div class="indicator"></div>
         <span class="text">Open Now</span>
     </div>
-
     <div class="true-footer">
         <p class="license">© 2026 Summit Ridge Outfitters, LLC. All rights reserved.</p>
         <div class="extras">
