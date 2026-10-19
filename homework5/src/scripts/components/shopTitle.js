@@ -15,8 +15,8 @@ export function shopTitle() {
             your first summit to your hundredth. We'll make sure you're ready.
         </div>
         <div class="buttons">
-            <button class="shop-now">
-                Shop Now <img src="./assets/arrowRight.svg" /></button><button class="explore-adventures">Expolore Adventures</button>
+            <button type="button" class="shop-now" data-action="scroll-to-section" data-target="shop-categories">
+                Shop Now <img src="./assets/arrowRight.svg" alt="" /></button><button type="button" class="explore-adventures" data-action="scroll-to-section" data-target="adventure-inspiration">Explore Adventures</button>
         </div>
     </div>
 </section>

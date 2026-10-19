@@ -49,7 +49,7 @@ const adventureStories = [
 export const shop = () => `<div id="shop" class="home">
       ${renderNav()}
       ${shopTitle()}
-      <section class="explore">
+      <section class="explore" id="shop-categories">
         <p class="top-text">EXPLORE THE RANGE</p>
         <h1 class="title">Shop by Category</h1>
         <div class="categories">
@@ -117,7 +117,7 @@ export const shop = () => `<div id="shop" class="home">
           </button>
         </div>
       </section>
-      <section class="adventure">
+      <section class="adventure" id="adventure-inspiration">
         <div class="container">
           <p class="top-text">GO DEEPER</p>
           <h1 class="title" style="color: white">Adventure Inspiration</h1>

@@ -35,6 +35,17 @@ app.addEventListener("click", (event) => {
     const isOpen = menu.classList.toggle("mobile-menu--open");
     menu.hidden = !isOpen;
     trigger.setAttribute("aria-expanded", String(isOpen));
+  } else if (action === "scroll-to-section") {
+    const target = document.getElementById(trigger.dataset.target);
+    if (target) {
+      const reducedMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)",
+      ).matches;
+      target.scrollIntoView({
+        behavior: reducedMotion ? "auto" : "smooth",
+        block: "start",
+      });
+    }
   }
 });
 
