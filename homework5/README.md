@@ -2,6 +2,8 @@
 
 web4 link: <https://in-info-web4.luddy.indianapolis.iu.edu/~kelohaya/homework5/dist/#contact>
 
+NOTE: I used random images for some parts because I could not get them to download from Figma for some reason.
+
 A client-side outdoor outfitter storefront built with vanilla JavaScript, Vite, and Sass. The site presents Summit Ridge's gear categories, company story, adventure guides, and contact information, with simulated login and signup flows.
 
 ## Getting started
