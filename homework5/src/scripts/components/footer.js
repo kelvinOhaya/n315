@@ -3,7 +3,7 @@ export function renderFooter() {
 <section class="footer">
     <div class="title-section">
         <div class="logo">
-            <img src="src/assets/MountainLogo.svg" alt="Summit Ridge Logo" />
+            <img src="./assets/MountainLogo.svg" alt="Summit Ridge Logo" />
         </div>
         <div class="content">
             <h1 class="Main">SUMMIT RIDGE</h1>
@@ -11,10 +11,10 @@ export function renderFooter() {
         </div>
     </div>
     <div class="icons">
-        <button class="icon"><img src="src/assets/InstagramLogo.svg" alt=""></button>
-        <button class="icon"><img src="src/assets/FacebookLogo.svg" alt=""></button>
-        <button class="icon"><img src="src/assets/YouTubeLogo.svg" alt=""></button>
-        <button class="icon"><img src="src/assets/TwitterLogo.svg" alt=""></button>
+        <button class="icon"><img src="./assets/InstagramLogo.svg" alt=""></button>
+        <button class="icon"><img src="./assets/FacebookLogo.svg" alt=""></button>
+        <button class="icon"><img src="./assets/YouTubeLogo.svg" alt=""></button>
+        <button class="icon"><img src="./assets/TwitterLogo.svg" alt=""></button>
     </div>
     <div class="info-container">
         <div class="info-section">
@@ -29,13 +29,13 @@ export function renderFooter() {
         </div>
         <div class="info-section">
             <h1 class="info-title">CONTACT</h1>
-            <div class="logo-and-info"><img src="src/assets/Phone.svg" alt="" class="logo">
+            <div class="logo-and-info"><img src="./assets/Phone.svg" alt="" class="logo">
                 <p class="info">4821 Trailhead Blvd Boulder, CO 8031</p>
             </div>
-            <div class="logo-and-info"><img src="src/assets/Location.svg" alt="" class="logo">
+            <div class="logo-and-info"><img src="./assets/Location.svg" alt="" class="logo">
                 <p class="info">(303) 555-0182</p>
             </div>
-            <div class="logo-and-info"><img src="src/assets/Mail.svg" alt="" class="logo">
+            <div class="logo-and-info"><img src="./assets/Mail.svg" alt="" class="logo">
                 <p class="info">hello@summitridge.com</p>
             </div>
         </div>

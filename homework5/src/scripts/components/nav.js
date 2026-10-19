@@ -34,7 +34,7 @@ export function renderNav() {
 <nav class="nav">
     <div class="title-section">
         <div class="logo">
-            <img src="src/assets/MountainLogo.svg" alt="Summit Ridge Logo" />
+            <img src="./assets/MountainLogo.svg" alt="Summit Ridge Logo" />
         </div>
         <div class="content">
             <h1 class="Main">SUMMIT RIDGE</h1>
@@ -58,14 +58,14 @@ export function renderNav() {
         </button>
         <div class="icons">
             <div class="cart-icon-and-indicator">
-                <img src="src/assets/Cart basket.svg" alt="Cart Basket" class="cart-icon" />
+                <img src="./assets/Cart basket.svg" alt="Cart Basket" class="cart-icon" />
                 <div class="cart-indicator">
                     <p>3</p>
                 </div>
             </div>
 
             <button type="button" class="nav-btn" data-action="toggle-menu" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
-                <img src="src/assets/Menu.svg" alt="" class="menu-icon" />
+                <img src="./assets/Menu.svg" alt="" class="menu-icon" />
             </button>
         </div>
     </div>

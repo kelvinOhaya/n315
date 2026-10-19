@@ -33,7 +33,7 @@ export const about = () => `<div id="about" class="home">
           </p>
         </div>
         <div class="story-image">
-          <img src="src/assets/mountains.jpg" alt="" />
+          <img src="./assets/mountains.jpg" alt="" />
           <div class="badge">
             <span class="badge-number">25+</span>
             <span class="badge-label">Years Serving the Outdoors</span>
@@ -94,7 +94,7 @@ export const about = () => `<div id="about" class="home">
         <h1 class="title">Meet Our Team</h1>
         <div class="team-grid">
           <div class="team-member">
-            <img src="src/assets/profile.jpg" alt="" />
+            <img src="./assets/profile.jpg" alt="" />
             <h3>Dana Holbrook</h3>
             <p class="role">Founder &amp; CEO</p>
             <p class="bio">
@@ -105,7 +105,7 @@ export const about = () => `<div id="about" class="home">
             </p>
           </div>
           <div class="team-member">
-            <img src="src/assets/profile.jpg" alt="" />
+            <img src="./assets/profile.jpg" alt="" />
             <h3>Marcus Okonkwo</h3>
             <p class="role">Head of Gear &amp; Outfitting</p>
             <p class="bio">
@@ -115,7 +115,7 @@ export const about = () => `<div id="about" class="home">
             </p>
           </div>
           <div class="team-member">
-            <img src="src/assets/profile.jpg" alt="" />
+            <img src="./assets/profile.jpg" alt="" />
             <h3>Leila Ramos</h3>
             <p class="role">Director of Adventure Programs</p>
             <p class="bio">
@@ -125,7 +125,7 @@ export const about = () => `<div id="about" class="home">
             </p>
           </div>
           <div class="team-member">
-            <img src="src/assets/profile.jpg" alt="" />
+            <img src="./assets/profile.jpg" alt="" />
             <h3>Jonah Steele</h3>
             <p class="role">Customer Experience Lead</p>
             <p class="bio">

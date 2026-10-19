@@ -1,5 +1,7 @@
 # Summit Ridge Outfitters
 
+web4 link: <https://in-info-web4.luddy.indianapolis.iu.edu/~kelohaya/homework5/dist/#contact>
+
 A client-side outdoor outfitter storefront built with vanilla JavaScript, Vite, and Sass. The site presents Summit Ridge's gear categories, company story, adventure guides, and contact information, with simulated login and signup flows.
 
 ## Getting started
@@ -15,24 +17,24 @@ Vite prints a local URL in the terminal. Open it in a browser to use the site.
 
 ## Available commands
 
-| Command | Description |
-| --- | --- |
-| `npm run dev` | Start the local development server. |
-| `npm run build` | Create a production build in `dist/`. |
+| Command           | Description                                          |
+| ----------------- | ---------------------------------------------------- |
+| `npm run dev`     | Start the local development server.                  |
+| `npm run build`   | Create a production build in `dist/`.                |
 | `npm run preview` | Preview the production build locally after building. |
 
 ## Pages
 
 The site uses hash-based navigation. Open a page using the navigation menu or the corresponding hash route:
 
-| Route | Page |
-| --- | --- |
-| `#/shop` (default) | Storefront, product/category sections, and featured content. |
-| `#/about` | Company story, values, team, history, and store details. |
-| `#/adventure-guides` | Adventure and guided-trip information. |
-| `#/contact` | Contact details and frequently asked questions. |
-| `#/login` | Login form. |
-| `#/signup` | Account registration form. |
+| Route                | Page                                                         |
+| -------------------- | ------------------------------------------------------------ |
+| `#/shop` (default)   | Storefront, product/category sections, and featured content. |
+| `#/about`            | Company story, values, team, history, and store details.     |
+| `#/adventure-guides` | Adventure and guided-trip information.                       |
+| `#/contact`          | Contact details and frequently asked questions.              |
+| `#/login`            | Login form.                                                  |
+| `#/signup`           | Account registration form.                                   |
 
 Unknown routes fall back to the shop page. Shared navigation, footer, and toast components are in `src/scripts/components/`.
 
@@ -61,5 +63,6 @@ Signup and login are simulated in the browser; there is no server or API. User r
 ## Notes
 
 - Sass is loaded through the Vite entry point at `src/scripts/main.js`.
+- Vite uses relative asset URLs so the production build can be hosted from a subdirectory. Upload the **contents** of `dist/` to the directory that serves the site.
 - Some page imagery is loaded from `picsum.photos`, and the HTML imports fonts from Google Fonts, so those external assets need an internet connection.
 - The storefront is a presentation/demo site; no checkout or product inventory backend is configured.

@@ -57,7 +57,7 @@ export const login = () => `<div id="login" class="home">
 
           <div class="auth-side">
             <img
-              src="src/assets/mountains.jpg"
+              src="./assets/mountains.jpg"
               alt=""
               class="auth-side-image"
             />

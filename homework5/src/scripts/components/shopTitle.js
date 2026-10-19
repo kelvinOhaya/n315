@@ -16,7 +16,7 @@ export function shopTitle() {
         </div>
         <div class="buttons">
             <button class="shop-now">
-                Shop Now <img src="src/assets/arrowRight.svg" /></button><button class="explore-adventures">Expolore Adventures</button>
+                Shop Now <img src="./assets/arrowRight.svg" /></button><button class="explore-adventures">Expolore Adventures</button>
         </div>
     </div>
 </section>

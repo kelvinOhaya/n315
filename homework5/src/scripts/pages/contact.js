@@ -79,7 +79,7 @@ export const contact = () => `<div id="contact" class="home">
                     </div>
 
                     <a href="#" class="mapbox">
-                        <div class="mapimg" style="background-image: url(images/ct/map-preview.jpg)"></div>
+                        <div class="mapimg" style="background-image: url(./assets/mountains.jpg)"></div>
                         <div class="maptext">
                             <svg class="mappin" viewBox="0 0 24 24" fill="none" stroke="#E8722A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
                             <p>Boulder, CO</p>

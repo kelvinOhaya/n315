@@ -57,7 +57,7 @@
     padding-bottom: 210px;
     background-image:
       linear-gradient(90deg, #0b1610eb, #0b1610a6, #00000000),
-      url("../src/assets/ShopBackground.jpg");
+      url("../assets/ShopBackground.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -335,7 +335,7 @@
         .card {
           border-radius: 16px;
           max-width: 600px;
-          background-image: url("../src/assets/mountains.jpg");
+          background-image: url("../assets/mountains.jpg");
           background-position: cover;
 
           background-repeat: no-repeat;

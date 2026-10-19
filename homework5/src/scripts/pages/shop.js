@@ -13,7 +13,7 @@ export const shop = () => `<div id="shop" class="home">
             <img src="https://picsum.photos/200" class="cover" alt="" />
             <div class="title-and-logo">
               <img
-                src="src/assets/OrangeMountainLogo.svg"
+                src="./assets/OrangeMountainLogo.svg"
                 class="logo"
                 alt=""
               />
@@ -24,7 +24,7 @@ export const shop = () => `<div id="shop" class="home">
             <img src="https://picsum.photos/200" class="cover" alt="" />
             <div class="title-and-logo">
               <img
-                src="src/assets/OrangeMountainLogo.svg"
+                src="./assets/OrangeMountainLogo.svg"
                 class="logo"
                 alt=""
               />
@@ -35,7 +35,7 @@ export const shop = () => `<div id="shop" class="home">
             <img src="https://picsum.photos/200" class="cover" alt="" />
             <div class="title-and-logo">
               <img
-                src="src/assets/OrangeMountainLogo.svg"
+                src="./assets/OrangeMountainLogo.svg"
                 class="logo"
                 alt=""
               />
@@ -46,7 +46,7 @@ export const shop = () => `<div id="shop" class="home">
             <img src="https://picsum.photos/200" class="cover" alt="" />
             <div class="title-and-logo">
               <img
-                src="src/assets/OrangeMountainLogo.svg"
+                src="./assets/OrangeMountainLogo.svg"
                 class="logo"
                 alt=""
               />
@@ -57,7 +57,7 @@ export const shop = () => `<div id="shop" class="home">
             <img src="https://picsum.photos/200" class="cover" alt="" />
             <div class="title-and-logo">
               <img
-                src="src/assets/OrangeMountainLogo.svg"
+                src="./assets/OrangeMountainLogo.svg"
                 class="logo"
                 alt=""
               />
@@ -68,7 +68,7 @@ export const shop = () => `<div id="shop" class="home">
             <img src="https://picsum.photos/200" class="cover" alt="" />
             <div class="title-and-logo">
               <img
-                src="src/assets/OrangeMountainLogo.svg"
+                src="./assets/OrangeMountainLogo.svg"
                 class="logo"
                 alt=""
               />
@@ -88,17 +88,17 @@ export const shop = () => `<div id="shop" class="home">
               <div class="content">
                 <h1 class="title">Trailblazer 65L Backpack</h1>
                 <div class="stars">
-                  <img src="src/assets/star.svg" alt="" />
-                  <img src="src/assets/star.svg" alt="" />
-                  <img src="src/assets/star.svg" alt="" />
-                  <img src="src/assets/star.svg" alt="" />
-                  <img src="src/assets/star.svg" alt="" />
+                  <img src="./assets/star.svg" alt="" />
+                  <img src="./assets/star.svg" alt="" />
+                  <img src="./assets/star.svg" alt="" />
+                  <img src="./assets/star.svg" alt="" />
+                  <img src="./assets/star.svg" alt="" />
                 </div>
                 <div class="price-and-link">
                   <p class="price">$289</p>
                   <div class="view-product">
                     <span>View Product</span>
-                    <img src="src/assets/OrangeArrowRight.svg" alt="" />
+                    <img src="./assets/OrangeArrowRight.svg" alt="" />
                   </div>
                 </div>
               </div>
@@ -109,17 +109,17 @@ export const shop = () => `<div id="shop" class="home">
               <div class="content">
                 <h1 class="title">Trailblazer 65L Backpack</h1>
                 <div class="stars">
-                  <img src="src/assets/star.svg" alt="" />
-                  <img src="src/assets/star.svg" alt="" />
-                  <img src="src/assets/star.svg" alt="" />
-                  <img src="src/assets/star.svg" alt="" />
-                  <img src="src/assets/star.svg" alt="" />
+                  <img src="./assets/star.svg" alt="" />
+                  <img src="./assets/star.svg" alt="" />
+                  <img src="./assets/star.svg" alt="" />
+                  <img src="./assets/star.svg" alt="" />
+                  <img src="./assets/star.svg" alt="" />
                 </div>
                 <div class="price-and-link">
                   <p class="price">$289</p>
                   <div class="view-product">
                     <span>View Product</span>
-                    <img src="src/assets/OrangeArrowRight.svg" alt="" />
+                    <img src="./assets/OrangeArrowRight.svg" alt="" />
                   </div>
                 </div>
               </div>
@@ -130,17 +130,17 @@ export const shop = () => `<div id="shop" class="home">
               <div class="content">
                 <h1 class="title">Trailblazer 65L Backpack</h1>
                 <div class="stars">
-                  <img src="src/assets/star.svg" alt="" />
-                  <img src="src/assets/star.svg" alt="" />
-                  <img src="src/assets/star.svg" alt="" />
-                  <img src="src/assets/star.svg" alt="" />
-                  <img src="src/assets/star.svg" alt="" />
+                  <img src="./assets/star.svg" alt="" />
+                  <img src="./assets/star.svg" alt="" />
+                  <img src="./assets/star.svg" alt="" />
+                  <img src="./assets/star.svg" alt="" />
+                  <img src="./assets/star.svg" alt="" />
                 </div>
                 <div class="price-and-link">
                   <p class="price">$289</p>
                   <div class="view-product">
                     <span>View Product</span>
-                    <img src="src/assets/OrangeArrowRight.svg" alt="" />
+                    <img src="./assets/OrangeArrowRight.svg" alt="" />
                   </div>
                 </div>
               </div>
@@ -151,17 +151,17 @@ export const shop = () => `<div id="shop" class="home">
               <div class="content">
                 <h1 class="title">Trailblazer 65L Backpack</h1>
                 <div class="stars">
-                  <img src="src/assets/star.svg" alt="" />
-                  <img src="src/assets/star.svg" alt="" />
-                  <img src="src/assets/star.svg" alt="" />
-                  <img src="src/assets/star.svg" alt="" />
-                  <img src="src/assets/star.svg" alt="" />
+                  <img src="./assets/star.svg" alt="" />
+                  <img src="./assets/star.svg" alt="" />
+                  <img src="./assets/star.svg" alt="" />
+                  <img src="./assets/star.svg" alt="" />
+                  <img src="./assets/star.svg" alt="" />
                 </div>
                 <div class="price-and-link">
                   <p class="price">$289</p>
                   <div class="view-product">
                     <span>View Product</span>
-                    <img src="src/assets/OrangeArrowRight.svg" alt="" />
+                    <img src="./assets/OrangeArrowRight.svg" alt="" />
                   </div>
                 </div>
               </div>
@@ -172,17 +172,17 @@ export const shop = () => `<div id="shop" class="home">
               <div class="content">
                 <h1 class="title">Trailblazer 65L Backpack</h1>
                 <div class="stars">
-                  <img src="src/assets/star.svg" alt="" />
-                  <img src="src/assets/star.svg" alt="" />
-                  <img src="src/assets/star.svg" alt="" />
-                  <img src="src/assets/star.svg" alt="" />
-                  <img src="src/assets/star.svg" alt="" />
+                  <img src="./assets/star.svg" alt="" />
+                  <img src="./assets/star.svg" alt="" />
+                  <img src="./assets/star.svg" alt="" />
+                  <img src="./assets/star.svg" alt="" />
+                  <img src="./assets/star.svg" alt="" />
                 </div>
                 <div class="price-and-link">
                   <p class="price">$289</p>
                   <div class="view-product">
                     <span>View Product</span>
-                    <img src="src/assets/OrangeArrowRight.svg" alt="" />
+                    <img src="./assets/OrangeArrowRight.svg" alt="" />
                   </div>
                 </div>
               </div>
@@ -193,17 +193,17 @@ export const shop = () => `<div id="shop" class="home">
               <div class="content">
                 <h1 class="title">Trailblazer 65L Backpack</h1>
                 <div class="stars">
-                  <img src="src/assets/star.svg" alt="" />
-                  <img src="src/assets/star.svg" alt="" />
-                  <img src="src/assets/star.svg" alt="" />
-                  <img src="src/assets/star.svg" alt="" />
-                  <img src="src/assets/star.svg" alt="" />
+                  <img src="./assets/star.svg" alt="" />
+                  <img src="./assets/star.svg" alt="" />
+                  <img src="./assets/star.svg" alt="" />
+                  <img src="./assets/star.svg" alt="" />
+                  <img src="./assets/star.svg" alt="" />
                 </div>
                 <div class="price-and-link">
                   <p class="price">$289</p>
                   <div class="view-product">
                     <span>View Product</span>
-                    <img src="src/assets/OrangeArrowRight.svg" alt="" />
+                    <img src="./assets/OrangeArrowRight.svg" alt="" />
                   </div>
                 </div>
               </div>
@@ -211,7 +211,7 @@ export const shop = () => `<div id="shop" class="home">
           </div>
           <button class="view-all-products">
             <span>View all Products</span>
-            <img src="src/assets/BlackArrowRight.svg" alt="" />
+            <img src="./assets/BlackArrowRight.svg" alt="" />
           </button>
         </div>
       </section>
@@ -230,7 +230,7 @@ export const shop = () => `<div id="shop" class="home">
                 </p>
                 <div class="action">
                   <span>Read More</span>
-                  <img src="src/assets/OrangeArrowRight.svg" alt="" />
+                  <img src="./assets/OrangeArrowRight.svg" alt="" />
                 </div>
               </div>
             </div>
@@ -244,7 +244,7 @@ export const shop = () => `<div id="shop" class="home">
                 </p>
                 <div class="action">
                   <span>Read More</span>
-                  <img src="src/assets/OrangeArrowRight.svg" alt="" />
+                  <img src="./assets/OrangeArrowRight.svg" alt="" />
                 </div>
               </div>
             </div>
@@ -258,7 +258,7 @@ export const shop = () => `<div id="shop" class="home">
                 </p>
                 <div class="action">
                   <span>Read More</span>
-                  <img src="src/assets/OrangeArrowRight.svg" alt="" />
+                  <img src="./assets/OrangeArrowRight.svg" alt="" />
                 </div>
               </div>
             </div>
@@ -272,7 +272,7 @@ export const shop = () => `<div id="shop" class="home">
                 </p>
                 <div class="action">
                   <span>Read More</span>
-                  <img src="src/assets/OrangeArrowRight.svg" alt="" />
+                  <img src="./assets/OrangeArrowRight.svg" alt="" />
                 </div>
               </div>
             </div>
@@ -285,11 +285,11 @@ export const shop = () => `<div id="shop" class="home">
         <div class="comments">
           <div class="comment">
             <div class="stars">
-              <img src="src/assets/star.svg" alt="" />
-              <img src="src/assets/star.svg" alt="" />
-              <img src="src/assets/star.svg" alt="" />
-              <img src="src/assets/star.svg" alt="" />
-              <img src="src/assets/star.svg" alt="" />
+              <img src="./assets/star.svg" alt="" />
+              <img src="./assets/star.svg" alt="" />
+              <img src="./assets/star.svg" alt="" />
+              <img src="./assets/star.svg" alt="" />
+              <img src="./assets/star.svg" alt="" />
             </div>
             <p class="description">
               “Summit Ridge outfitted my entire PCT section hike. The staff
@@ -297,7 +297,7 @@ export const shop = () => `<div id="shop" class="home">
               right fit. I can't recommend them enough.”
             </p>
             <div class="user">
-              <img src="src/assets/profile.jpg" class="profile"></img>
+              <img src="./assets/profile.jpg" class="profile"></img>
               <div class="name-and-desc">
                 <p class="name">Sarah K.</p>
                 <p class="desc">Trail Runner · Denver, CO</p>
@@ -306,11 +306,11 @@ export const shop = () => `<div id="shop" class="home">
           </div>
           <div class="comment">
             <div class="stars">
-              <img src="src/assets/star.svg" alt="" />
-              <img src="src/assets/star.svg" alt="" />
-              <img src="src/assets/star.svg" alt="" />
-              <img src="src/assets/star.svg" alt="" />
-              <img src="src/assets/star.svg" alt="" />
+              <img src="./assets/star.svg" alt="" />
+              <img src="./assets/star.svg" alt="" />
+              <img src="./assets/star.svg" alt="" />
+              <img src="./assets/star.svg" alt="" />
+              <img src="./assets/star.svg" alt="" />
             </div>
             <p class="description">
               “Summit Ridge outfitted my entire PCT section hike. The staff
@@ -318,7 +318,7 @@ export const shop = () => `<div id="shop" class="home">
               right fit. I can't recommend them enough.”
             </p>
             <div class="user">
-              <img src="src/assets/profile.jpg" class="profile"></img>
+              <img src="./assets/profile.jpg" class="profile"></img>
               <div class="name-and-desc">
                 <p class="name">Sarah K.</p>
                 <p class="desc">Trail Runner · Denver, CO</p>
@@ -327,11 +327,11 @@ export const shop = () => `<div id="shop" class="home">
           </div>
           <div class="comment">
             <div class="stars">
-              <img src="src/assets/star.svg" alt="" />
-              <img src="src/assets/star.svg" alt="" />
-              <img src="src/assets/star.svg" alt="" />
-              <img src="src/assets/star.svg" alt="" />
-              <img src="src/assets/star.svg" alt="" />
+              <img src="./assets/star.svg" alt="" />
+              <img src="./assets/star.svg" alt="" />
+              <img src="./assets/star.svg" alt="" />
+              <img src="./assets/star.svg" alt="" />
+              <img src="./assets/star.svg" alt="" />
             </div>
             <p class="description">
               “Summit Ridge outfitted my entire PCT section hike. The staff
@@ -339,7 +339,7 @@ export const shop = () => `<div id="shop" class="home">
               right fit. I can't recommend them enough.”
             </p>
             <div class="user">
-              <img src="src/assets/profile.jpg" class="profile"></img>
+              <img src="./assets/profile.jpg" class="profile"></img>
               <div class="name-and-desc">
                 <p class="name">Sarah K.</p>
                 <p class="desc">Trail Runner · Denver, CO</p>
