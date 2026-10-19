@@ -6,12 +6,12 @@ const imageUrl = (id, width) =>
   `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${width}&q=85`;
 
 const categories = [
-  { name: "Camping", image: "photo-1756147627747-f921252ae2b2" },
-  { name: "Hiking", image: "photo-1682294235600-e172309e5ac6" },
-  { name: "Fishing", image: "photo-1670249305936-49250bea39ff" },
-  { name: "Kayaking", image: "photo-1608801320397-43d99bda19f2" },
-  { name: "Climbing", image: "photo-1624410721903-0b8e8596cc6e" },
-  { name: "Apparel", image: "photo-1587325170487-684f3d33d561" },
+  { name: "Camping", image: "photo-1756147627747-f921252ae2b2", icon: "campingIcon.svg" },
+  { name: "Hiking", image: "photo-1682294235600-e172309e5ac6", icon: "OrangeMountainLogo.svg" },
+  { name: "Fishing", image: "photo-1670249305936-49250bea39ff", icon: "fishIcon.svg" },
+  { name: "Kayaking", image: "photo-1608801320397-43d99bda19f2", icon: "waves.svg" },
+  { name: "Climbing", image: "photo-1624410721903-0b8e8596cc6e", icon: "triangle.svg" },
+  { name: "Apparel", image: "photo-1587325170487-684f3d33d561", icon: "apparel.svg" },
 ];
 
 const featuredProducts = [
@@ -55,7 +55,7 @@ export const shop = () => `<div id="shop" class="home">
         <div class="categories">
           ${categories
             .map(
-              ({ name, image }) => `<div class="category">
+              ({ name, image, icon }) => `<div class="category">
             <img
               src="${imageUrl(image, 800)}"
               srcset="${imageUrl(image, 400)} 400w, ${imageUrl(image, 800)} 800w, ${imageUrl(image, 1200)} 1200w"
@@ -65,7 +65,7 @@ export const shop = () => `<div id="shop" class="home">
               loading="lazy"
             />
             <div class="title-and-logo">
-              <img src="./assets/OrangeMountainLogo.svg" class="logo" alt="" />
+              <img src="./assets/${icon}" class="logo" alt="" />
               <p>${name}</p>
             </div>
           </div>`,

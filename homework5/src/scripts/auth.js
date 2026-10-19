@@ -1,7 +1,3 @@
-// Minimal simulated authentication — no backend, just persisted client state.
-// NOTE: storing plain-text passwords in localStorage is only acceptable here
-// because this is a client-only simulation for coursework, never do this in
-// a real application.
 const SESSION_KEY = "summitRidge.isLoggedIn";
 const USERS_KEY = "summitRidge.users";
 

@@ -38,8 +38,6 @@ app.addEventListener("click", (event) => {
   }
 });
 
-// Delegated submit handling for the login/signup forms, since they're
-// injected dynamically and re-created on every render.
 app.addEventListener("submit", (event) => {
   const form = event.target;
 
@@ -52,8 +50,6 @@ app.addEventListener("submit", (event) => {
   }
 });
 
-// Clear a field's error state the moment the user starts correcting it,
-// instead of leaving a stale warning on screen until the next submit.
 app.addEventListener("input", (event) => {
   const input = event.target;
   if (!input.classList.contains("invalid")) return;
