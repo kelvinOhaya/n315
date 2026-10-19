@@ -94,7 +94,7 @@ export const about = () => `<div id="about" class="home">
         <h1 class="title">Meet Our Team</h1>
         <div class="team-grid">
           <div class="team-member">
-            <img src="./assets/profile.jpg" alt="" />
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&crop=faces&w=900&h=900&q=85" srcset="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&crop=faces&w=480&h=480&q=85 480w, https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&crop=faces&w=900&h=900&q=85 900w" sizes="(max-width: 600px) 280px, 25vw" alt="Dana Holbrook, Founder and CEO" loading="lazy" />
             <h3>Dana Holbrook</h3>
             <p class="role">Founder &amp; CEO</p>
             <p class="bio">
@@ -105,7 +105,7 @@ export const about = () => `<div id="about" class="home">
             </p>
           </div>
           <div class="team-member">
-            <img src="./assets/profile.jpg" alt="" />
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&crop=faces&w=900&h=900&q=85" srcset="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&crop=faces&w=480&h=480&q=85 480w, https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&crop=faces&w=900&h=900&q=85 900w" sizes="(max-width: 600px) 280px, 25vw" alt="Marcus Okonkwo, Head of Gear and Outfitting" loading="lazy" />
             <h3>Marcus Okonkwo</h3>
             <p class="role">Head of Gear &amp; Outfitting</p>
             <p class="bio">
@@ -115,7 +115,7 @@ export const about = () => `<div id="about" class="home">
             </p>
           </div>
           <div class="team-member">
-            <img src="./assets/profile.jpg" alt="" />
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&crop=faces&w=900&h=900&q=85" srcset="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&crop=faces&w=480&h=480&q=85 480w, https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&crop=faces&w=900&h=900&q=85 900w" sizes="(max-width: 600px) 280px, 25vw" alt="Leila Ramos, Director of Adventure Programs" loading="lazy" />
             <h3>Leila Ramos</h3>
             <p class="role">Director of Adventure Programs</p>
             <p class="bio">
@@ -125,7 +125,7 @@ export const about = () => `<div id="about" class="home">
             </p>
           </div>
           <div class="team-member">
-            <img src="./assets/profile.jpg" alt="" />
+            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&crop=faces&w=900&h=900&q=85" srcset="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&crop=faces&w=480&h=480&q=85 480w, https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&crop=faces&w=900&h=900&q=85 900w" sizes="(max-width: 600px) 280px, 25vw" alt="Jonah Steele, Customer Experience Lead" loading="lazy" />
             <h3>Jonah Steele</h3>
             <p class="role">Customer Experience Lead</p>
             <p class="bio">

@@ -57,7 +57,7 @@
     padding-bottom: 210px;
     background-image:
       linear-gradient(90deg, #0b1610eb, #0b1610a6, #00000000),
-      url("../assets/ShopBackground.jpg");
+      url("https://images.unsplash.com/photo-1704277915374-29915bafc485?auto=format&fit=crop&w=2200&q=85");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -184,6 +184,7 @@
           position: absolute;
           width: 100%;
           height: 100%;
+          object-fit: cover;
           background: linear-gradient(
             180deg,
             rgba(13, 24, 16, 1) 0%,
@@ -245,9 +246,10 @@
           line-height: 15px;
           letter-spacing: 0.25px;
         }
-        img {
+        > .product-photo {
           width: 100%;
-          height: 100%;
+          height: 220px;
+          object-fit: cover;
           border-radius: 16px 16px 0 0;
         }
         .content {
@@ -334,10 +336,19 @@
         gap: 32px;
         .card {
           border-radius: 16px;
+          flex: 1 1 calc(50% - 16px);
           max-width: 600px;
-          background-image: url("../assets/mountains.jpg");
-          background-position: cover;
-
+          min-height: 320px;
+          aspect-ratio: 16 / 10;
+          background-image:
+            linear-gradient(
+              0deg,
+              rgba(11, 22, 16, 0.92),
+              rgba(11, 22, 16, 0.06) 80%
+            ),
+            var(--card-image);
+          background-position: center;
+          background-size: cover;
           background-repeat: no-repeat;
           display: flex;
           justify-content: end;
@@ -391,6 +402,9 @@
     text-align: center;
     .comments {
       margin-top: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
       .comment {
         margin-top: 32px;
         display: flex;

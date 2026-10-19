@@ -64,5 +64,5 @@ Signup and login are simulated in the browser; there is no server or API. User r
 
 - Sass is loaded through the Vite entry point at `src/scripts/main.js`.
 - Vite uses relative asset URLs so the production build can be hosted from a subdirectory. Upload the **contents** of `dist/` to the directory that serves the site.
-- Some page imagery is loaded from `picsum.photos`, and the HTML imports fonts from Google Fonts, so those external assets need an internet connection.
+- Shop category and product photography is served by Unsplash Images at responsive resolutions; those photos and the Google Fonts require an internet connection. Replace the photo IDs in `src/scripts/pages/shop.js` with your own image URLs or local assets when you have product photography.
 - The storefront is a presentation/demo site; no checkout or product inventory backend is configured.

@@ -5,7 +5,7 @@ a {
 .agHeroHolder {
   background-image:
     linear-gradient(rgba(17, 29, 21, 0.15), rgba(17, 29, 21, 0.75)),
-    url(../assets/mountains.jpg);
+    url("https://images.unsplash.com/photo-1682294235600-e172309e5ac6?auto=format&fit=crop&w=2000&q=85");
   background-color: #3c3c3c;
   background-size: cover;
   background-position: center;
@@ -124,8 +124,15 @@ a {
 
 .cardImg {
   position: relative;
-  height: 200px;
+  aspect-ratio: 16 / 10;
+  height: auto;
   background: linear-gradient(135deg, #2c3e33, #111d15) center / cover no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.cardImg {
+  background-repeat: no-repeat;
 }
 
 .tag {

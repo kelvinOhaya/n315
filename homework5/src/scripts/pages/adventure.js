@@ -1,9 +1,12 @@
 import { renderNav } from "../components/nav.js";
 import { renderFooter } from "../components/footer.js";
 
+const photoUrl = (id) =>
+  `https://images.unsplash.com/${id}?auto=format&fit=crop&w=1200&q=85`;
+
 export const adventureGuides = () => `<div id="adventure-guides" class="home">
       ${renderNav()}
-      <div class="agHeroHolder" style="background-image:url(https://picsum.photos/200)">
+      <div class="agHeroHolder">
             <p>EXPERT KNOWLEDGE</p>
             <h1>Adventure Guides</h1>
         </div>
@@ -24,7 +27,7 @@ export const adventureGuides = () => `<div id="adventure-guides" class="home">
         <div class="agSection3">
             <div class="cardGrid">
                 <article class="cards">
-                    <div class="cardImg" style="background-image:url(https://picsum.photos/200)"><span class="tag">Camping</span></div>
+                    <div class="cardImg" style="background-image:url('${photoUrl("photo-1756147627747-f921252ae2b2")}')"><span class="tag">Camping</span></div>
                     <div class="cardBody">
                         <div class="meta"><span>Dana Holbrook</span><span>8 min read</span></div>
                         <h3>Beginner Camping Checklist</h3>
@@ -34,7 +37,7 @@ export const adventureGuides = () => `<div id="adventure-guides" class="home">
                 </article>
 
                 <article class="cards">
-                    <div class="cardImg" style="background-image:url(https://picsum.photos/200)"><span class="tag">Hiking</span></div>
+                    <div class="cardImg" style="background-image:url('${photoUrl("photo-1704277915374-29915bafc485")}')"><span class="tag">Hiking</span></div>
                     <div class="cardBody">
                         <div class="meta"><span>Leila Ramos</span><span>12 min read</span></div>
                         <h3>Best Indiana Hiking Trails</h3>
@@ -44,7 +47,7 @@ export const adventureGuides = () => `<div id="adventure-guides" class="home">
                 </article>
 
                 <article class="cards">
-                    <div class="cardImg" style="background-image:url(https://picsum.photos/200)"><span class="tag">Gear Guide</span></div>
+                    <div class="cardImg" style="background-image:url('${photoUrl("photo-1622260614153-03223fb72052")}')"><span class="tag">Gear Guide</span></div>
                     <div class="cardBody">
                         <div class="meta"><span>Marcus Okonkwo</span><span>10 min read</span></div>
                         <h3>Choosing the Right Backpack</h3>
@@ -54,7 +57,7 @@ export const adventureGuides = () => `<div id="adventure-guides" class="home">
                 </article>
 
                 <article class="cards">
-                    <div class="cardImg" style="background-image:url(https://picsum.photos/200)"><span class="tag">Camping</span></div>
+                    <div class="cardImg" style="background-image:url('${photoUrl("photo-1511006472455-7a0b2f2b181c")}')"><span class="tag">Camping</span></div>
                     <div class="cardBody">
                         <div class="meta"><span>Jonah Steele</span><span>6 min read</span></div>
                         <h3>Campfire Cooking Basics</h3>
@@ -64,7 +67,7 @@ export const adventureGuides = () => `<div id="adventure-guides" class="home">
                 </article>
 
                 <article class="cards">
-                    <div class="cardImg" style="background-image:url(https://picsum.photos/200)"><span class="tag">Kayaking</span></div>
+                    <div class="cardImg" style="background-image:url('${photoUrl("photo-1608801320397-43d99bda19f2")}')"><span class="tag">Kayaking</span></div>
                     <div class="cardBody">
                         <div class="meta"><span>Leila Ramos</span><span>7 min read</span></div>
                         <h3>Kayaking Safety Tips</h3>
@@ -74,7 +77,7 @@ export const adventureGuides = () => `<div id="adventure-guides" class="home">
                 </article>
 
                 <article class="cards">
-                    <div class="cardImg" style="background-image:url(https://picsum.photos/200)"><span class="tag">Ethics</span></div>
+                    <div class="cardImg" style="background-image:url('${photoUrl("photo-1708637126654-db7af29eebac")}')"><span class="tag">Ethics</span></div>
                     <div class="cardBody">
                         <div class="meta"><span>Dana Holbrook</span><span>8 min read</span></div>
                         <h3>Leave No Trace Principles</h3>
@@ -95,7 +98,7 @@ export const adventureGuides = () => `<div id="adventure-guides" class="home">
             </div>
 
             <div class="rightsidetext">
-                <div class="videoThumb" style="background-image:url(https://picsum.photos/200)">
+                <div class="videoThumb" style="background-image:url('${photoUrl("photo-1678736428914-30bdaf507b7f")}')">
                     <button class="playBtn" aria-label="Play video">&#9654;</button>
                     <span class="duration">28:14</span>
                 </div>
