@@ -17,7 +17,7 @@ export const shop = () => `<div id="shop" class="home">
                 class="logo"
                 alt=""
               />
-              <p>Title</p>
+              <p>Camping</p>
             </div>
           </div>
           <div class="category">
@@ -28,7 +28,7 @@ export const shop = () => `<div id="shop" class="home">
                 class="logo"
                 alt=""
               />
-              <p>Title</p>
+              <p>Hiking</p>
             </div>
           </div>
           <div class="category">
@@ -39,7 +39,7 @@ export const shop = () => `<div id="shop" class="home">
                 class="logo"
                 alt=""
               />
-              <p>Title</p>
+              <p>Fishing</p>
             </div>
           </div>
           <div class="category">
@@ -50,7 +50,7 @@ export const shop = () => `<div id="shop" class="home">
                 class="logo"
                 alt=""
               />
-              <p>Title</p>
+              <p>Kayaking</p>
             </div>
           </div>
           <div class="category">
@@ -61,7 +61,7 @@ export const shop = () => `<div id="shop" class="home">
                 class="logo"
                 alt=""
               />
-              <p>Title</p>
+              <p>Climbing</p>
             </div>
           </div>
           <div class="category">
@@ -72,7 +72,7 @@ export const shop = () => `<div id="shop" class="home">
                 class="logo"
                 alt=""
               />
-              <p>Title</p>
+              <p>Apparel</p>
             </div>
           </div>
         </div>

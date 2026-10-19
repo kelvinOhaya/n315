@@ -218,14 +218,19 @@
   }
   .featured {
     padding-bottom: 96px;
+
     .products {
       padding: 24px;
       padding-top: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
       .product {
         position: relative;
         background-color: var(--white);
         border-radius: 0 0 16px 16px;
-        margin-bottom: 32px;
+        margin-bottom: 128px;
+        min-width: 300px;
 
         .chip {
           position: absolute;
@@ -248,6 +253,7 @@
         .content {
           padding: 20px;
           display: flex;
+
           flex-direction: column;
           justify-content: center;
           .title {
@@ -256,6 +262,7 @@
             line-height: 27px;
             letter-spacing: 0;
             text-align: left;
+            width: 100%;
           }
           .price-and-link {
             display: flex;
@@ -322,13 +329,15 @@
       .card-list {
         width: 100%;
         margin-top: 40px;
-
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
         .card {
           border-radius: 16px;
-          height: 459.51px;
-          width: 100%;
+          max-width: 600px;
           background-image: url("../src/assets/mountains.jpg");
-          background-position: center;
+          background-position: cover;
+
           background-repeat: no-repeat;
           display: flex;
           justify-content: end;
