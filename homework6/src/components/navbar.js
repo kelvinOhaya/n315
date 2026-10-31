@@ -1,3 +1,6 @@
+import titleImage from "../assets/title.png";
+import menuIcon from "../assets/menuIcon.svg";
+
 const breakpoint = window.matchMedia("(max-width: 900px)");
 let dropdownIsOpen = false;
 let dropdownBgColor = "#F25C54";
@@ -11,7 +14,7 @@ function navbarContent(mediaQuery, isAuthenticated) {
     return `
     <div class="mobile-links">
       <button id="menuBtn" aria-label="Toggle navigation menu">
-        <img src="src/assets/menuIcon.svg" alt="Menu" />
+        <img src="${menuIcon}" alt="Menu" />
       </button>
     </div>`;
   }
@@ -45,7 +48,7 @@ function renderNavbar() {
 
   if (navbar) {
     navbar.innerHTML = `
-      <img src="./src/assets/title.png" alt="Logo" class="title" />
+      <img src="${titleImage}" alt="Logo" class="title" />
       ${navbarContent(breakpoint, authenticated)}
     `;
   }
@@ -96,7 +99,7 @@ export default function navbar(bgColor = "#F25C54", isAuthenticated = false) {
   authenticated = Boolean(isAuthenticated);
   return `
   <div class="navbar" id="navbar">
-    <img src="./src/assets/title.png" alt="Logo" class="title" />
+    <img src="${titleImage}" alt="Logo" class="title" />
     ${navbarContent(breakpoint, authenticated)}
   </div>
   <div id="mobileDropdown">${mobileDropdownContent(breakpoint, authenticated)}</div>
