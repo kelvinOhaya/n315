@@ -1,0 +1,30 @@
+// Placeholder page shared styles
+.placeholder-page {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("https://picsum.photos/seed/jungle/1280/800");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+
+  .placeholder-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      font-family: "Caveat Variable", cursive, sans-serif;
+      font-size: 32px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 2px;
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.35);
+      padding: 20px 40px;
+      border-radius: 16px;
+    }
+  }
+}

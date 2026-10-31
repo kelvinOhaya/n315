@@ -1,0 +1,35 @@
+// Snackbar notification styles
+#snackbar-container {
+  position: fixed;
+  bottom: 24px;
+  right: 32px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+  pointer-events: none;
+}
+
+.snackbar {
+  pointer-events: auto;
+  padding: 12px 36px;
+  border-radius: 15px;
+  color: #000;
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  text-align: center;
+  opacity: 0;
+  transform: translateX(calc(100% + 32px));
+  transition:
+    opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14);
+
+  &.show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
