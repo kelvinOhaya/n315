@@ -1,0 +1,76 @@
+// Logout confirmation modal styles
+.logout-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+
+.logout-modal {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 40px 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+
+  h2 {
+    font-family: "Caveat Variable", cursive, sans-serif;
+    font-size: 48px;
+    letter-spacing: 2px;
+    color: #000;
+    margin-bottom: 12px;
+  }
+
+  p {
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #000;
+    margin-bottom: 28px;
+  }
+
+  .logout-modal-actions {
+    display: flex;
+    gap: 24px;
+  }
+
+  .logout-modal-btn {
+    border: none;
+    border-radius: 26px;
+    padding: 10px 40px;
+    font-family: "Caveat Variable", cursive, sans-serif;
+    font-size: 22px;
+    letter-spacing: 2px;
+    color: #000;
+    cursor: pointer;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.16);
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    &:active {
+      transform: translateY(1px);
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.14);
+    }
+
+    &--yes {
+      background-color: var(--pink);
+    }
+
+    &--no {
+      background-color: var(--blue-green);
+    }
+  }
+}
