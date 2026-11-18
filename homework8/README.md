@@ -2,7 +2,7 @@
 
 **Live site:** [https://in-info-web4.luddy.indianapolis.iu.edu/~kelohaya/homework8/dist/](https://in-info-web4.luddy.indianapolis.iu.edu/~kelohaya/homework8/dist/)
 
-The Jungle Cook is a recipe management web app (originally built as a class project, `homework7`). Users sign in, create recipes with ingredients, instructions, and an optional photo, then browse, search, view, edit, and delete their own recipes — all backed live by Firebase Authentication and Cloud Firestore.
+The Jungle Cook is a recipe management web app (originally built as a class project, `homework7`, now homework 8). Users sign in, create recipes with ingredients, instructions, and an optional photo, then browse, search, view, edit, and delete their own recipes — all backed live by Firebase Authentication and Cloud Firestore.
 
 ## Features
 
