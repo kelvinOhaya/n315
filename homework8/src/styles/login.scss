@@ -1,0 +1,153 @@
+.login-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--yellow);
+  display: flex;
+  flex-direction: column;
+
+  .login-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex: 1;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 32px;
+    gap: 80px;
+
+    .login-tab,
+    .signup-tab {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      max-width: 320px;
+      width: 100%;
+
+      .subtitle {
+        font-family: Lato, sans-serif;
+        font-style: italic;
+        font-size: 14px;
+        letter-spacing: 1.4px;
+        color: #000;
+        margin-bottom: 2px;
+      }
+
+      h2 {
+        font-family: Lato, sans-serif;
+        font-size: 30px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        color: #000;
+        margin-bottom: 36px;
+      }
+
+      .auth-form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .form-group {
+          margin-bottom: 30px;
+          width: 100%;
+
+          input {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #000;
+            background: transparent;
+            font-family: Lato, sans-serif;
+            font-size: 14px;
+            letter-spacing: 1.4px;
+            color: #000;
+            padding: 8px 0;
+            outline: none;
+            transition: border-color 0.2s;
+
+            &::placeholder {
+              color: rgba(0, 0, 0, 0.7);
+            }
+
+            &:focus {
+              border-bottom: 2px solid #000;
+            }
+
+            // Keep autocomplete background from turning white
+            &:-webkit-autofill,
+            &:-webkit-autofill:hover,
+            &:-webkit-autofill:focus,
+            &:-webkit-autofill:active {
+              -webkit-box-shadow: 0 0 0 1000px var(--yellow) inset !important;
+              box-shadow: 0 0 0 1000px var(--yellow) inset !important;
+              -webkit-text-fill-color: #000 !important;
+              caret-color: #000;
+              transition: background-color 5000s ease-in-out 0s;
+            }
+          }
+        }
+
+        .auth-btn {
+          align-self: flex-start;
+          background-color: var(--yellow);
+          border: none;
+          border-radius: 26px;
+          box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.16);
+          padding: 8px 48px;
+          font-family: "Caveat Variable", cursive, sans-serif;
+          font-size: 25px;
+          letter-spacing: 2.5px;
+          color: #000;
+          cursor: pointer;
+          margin-top: 10px;
+          transition:
+            transform 0.2s ease,
+            box-shadow 0.2s ease;
+
+          &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
+          }
+
+          &:active {
+            transform: translateY(1px);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.14);
+          }
+        }
+      }
+    }
+
+    .login-tab {
+      padding-top: 20px;
+    }
+  }
+
+  // Tablet & Mobile responsive layout matching Login - Tablet
+  @media (max-width: 900px) {
+    .login-content {
+      flex-direction: column;
+      align-items: center;
+      gap: 60px;
+      padding: 30px 24px;
+
+      .login-tab,
+      .signup-tab {
+        max-width: 300px;
+        align-items: center;
+        text-align: center;
+
+        .login-tab {
+          padding-top: 0;
+        }
+
+        .auth-form {
+          align-items: center;
+
+          .auth-btn {
+            align-self: center;
+          }
+        }
+      }
+    }
+  }
+}
+

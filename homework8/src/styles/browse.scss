@@ -1,0 +1,91 @@
+.browse-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--blue-green);
+  display: flex;
+  flex-direction: column;
+
+  .browse-content {
+    flex: 1;
+    width: 100%;
+    max-width: 1163px;
+    margin: 0 auto;
+    padding: 48px 32px;
+
+    .browse-heading {
+      font-family: "Caveat Variable", cursive, sans-serif;
+      font-weight: 700;
+      font-size: 25px;
+      letter-spacing: 2.5px;
+      color: #000;
+      margin-bottom: 32px;
+    }
+
+    .browse-search-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 32px;
+      padding: 10px 24px;
+      background-color: #fff;
+      border-radius: 26px;
+      box-shadow: 0px 10px 3px rgba(0, 0, 0, 0.16);
+
+      i {
+        color: rgba(0, 0, 0, 0.45);
+        font-size: 14px;
+      }
+
+      .browse-search-input {
+        flex: 1;
+        min-width: 0;
+        border: none;
+        background: transparent;
+        font-family: Inter, sans-serif;
+        font-size: 15px;
+        letter-spacing: 1px;
+        color: #000;
+        outline: none;
+
+        &::placeholder {
+          color: rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+
+    .recipie-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+    }
+
+    .browse-card-wrapper {
+      cursor: pointer;
+    }
+
+    .browse-empty,
+    .browse-loading {
+      font-family: "Caveat Variable", cursive, sans-serif;
+      font-size: 25px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #000;
+      text-align: center;
+      margin-top: 48px;
+    }
+  }
+
+  // Mobile: tighter page padding and a smaller inter-card gap now that cards stack to a
+  // single column (see recipiePreview.scss), matching the app's existing 768px breakpoint
+  @media (max-width: 768px) {
+    .browse-content {
+      padding: 32px 20px;
+
+      .recipie-grid {
+        gap: 32px;
+      }
+    }
+  }
+}

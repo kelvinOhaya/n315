@@ -1,0 +1,304 @@
+// Shared pill-shaped button (Attach file / Create Recipe / Add Ingredient)
+@mixin pill-button($font-size: 25px, $tracking: 2.5px, $text-color: #000) {
+  font-family: "Caveat Variable", cursive, sans-serif;
+  font-weight: 700;
+  font-size: $font-size;
+  letter-spacing: $tracking;
+  color: $text-color;
+  background-color: var(--pink);
+  border: none;
+  border-radius: 26px;
+  box-shadow: 0px 10px 3px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 12px 6px rgba(0, 0, 0, 0.18);
+  }
+
+  &:active {
+    transform: translateY(1px);
+    box-shadow: 0px 6px 3px rgba(0, 0, 0, 0.14);
+  }
+}
+
+// Circular icon button (add/remove ingredient controls)
+@mixin circle-icon-button($size: 38px, $bg: var(--pink), $fg: #fff) {
+  width: $size;
+  height: $size;
+  min-width: $size;
+  border: none;
+  border-radius: 50%;
+  background-color: $bg;
+  color: $fg;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    background-color 0.15s ease;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+
+  i {
+    font-size: 14px;
+  }
+}
+
+// Underlined text input (recipe name, ingredient name/quantity/unit)
+@mixin underline-field {
+  width: 100%;
+  border: none;
+  border-bottom: 3px solid #000;
+  background: transparent;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  letter-spacing: 1.6px;
+  color: #000;
+  padding: 8px 0;
+  outline: none;
+  transition: border-color 0.2s ease;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.55);
+  }
+
+  &:focus {
+    border-bottom: 2px solid #000;
+  }
+}
+
+.create-recipe-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+  h2 {
+    font-family: "Caveat Variable", cursive, sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: 2.5px;
+    color: #000;
+    text-align: left;
+    margin: 120px 0 48px 149px;
+  }
+
+  .recipe-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  // Shared label/field styling for every field in the form (top-info rows, ingredients, instructions)
+  .tag {
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #000;
+  }
+
+  .info-input {
+    @include underline-field;
+  }
+
+  .time-input-group {
+    display: flex;
+    gap: 16px;
+
+    .time-value-input {
+      flex: 1;
+    }
+
+    .time-unit-select {
+      flex: 1;
+      cursor: pointer;
+    }
+  }
+
+  .top-info {
+    width: 100%;
+    padding: 0 149px;
+    display: flex;
+    flex-direction: column;
+    gap: 94px;
+    margin-bottom: 94px;
+
+    .info-container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      // "Add Recipie Image" keeps the label and attach button on one row, with the preview below
+      &.attach-row {
+        gap: 16px;
+
+        .attach-row-top {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        .image-preview {
+          width: 160px;
+          height: 160px;
+          object-fit: cover;
+          border-radius: 12px;
+          align-self: flex-start;
+        }
+
+        .file-name {
+          font-family: Inter, sans-serif;
+          font-size: 14px;
+          color: rgba(0, 0, 0, 0.55);
+          margin-right: auto;
+          margin-left: 12px;
+        }
+
+        .attatch-file {
+          @include pill-button();
+          width: 110px;
+          height: 36.2px;
+          font-size: 17px;
+          font-weight: 400;
+          margin-left: auto;
+        }
+      }
+    }
+  }
+
+  .create-recipe-content {
+    flex: 1;
+    width: 100%;
+    padding: 0 149px 64px;
+
+    .ingredients-section,
+    .instructions-section {
+      margin-bottom: 64px;
+      position: relative;
+
+      h3 {
+        font-family: Inter, sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        letter-spacing: 2px;
+        color: #000;
+        margin-bottom: 32px;
+      }
+    }
+
+    .ingredients-list,
+    .instructions-list {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      margin-bottom: 24px;
+    }
+
+    .ingredient,
+    .instruction {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      position: relative;
+
+      .remove-ingredient-btn,
+      .remove-instruction-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        @include circle-icon-button(28px, rgba(0, 0, 0, 0.08), #000);
+      }
+    }
+
+    #addIngredientBtn,
+    #addInstructionBtn {
+      position: absolute;
+      right: 0;
+      bottom: 30px;
+      @include circle-icon-button(38px);
+      font-size: 20px;
+      margin-top: 8px;
+    }
+
+    .auth-btn {
+      @include pill-button(25px, 2.5px, #000);
+      align-self: center;
+      width: 354px;
+      max-width: 100%;
+      padding: 14px 0;
+      margin-top: 16px;
+    }
+
+    // Save/Back buttons on the edit-recipe page sit side by side instead of the single
+    // centered Create Recipe button
+    .edit-recipe-actions {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-top: 16px;
+
+      .auth-btn {
+        width: 160px;
+        margin-top: 0;
+      }
+
+      .auth-btn--secondary {
+        background-color: var(--blue-green);
+      }
+    }
+  }
+
+  .edit-recipe-not-found,
+  .edit-recipe-loading {
+    margin-top: 120px;
+    padding: 0 149px;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    color: #000;
+
+    a {
+      color: #000;
+    }
+  }
+
+  // Tablet & mobile layout, matching the Figma "Tablet" frame breakpoint
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 20px;
+      margin: 48px 0 32px 20px;
+    }
+
+    .top-info {
+      padding: 0 20px;
+      gap: 48px;
+      margin-bottom: 48px;
+    }
+
+    .create-recipe-content {
+      padding: 0 20px 48px;
+
+      .auth-btn {
+        width: 100%;
+      }
+
+      .edit-recipe-actions {
+        flex-direction: column;
+        align-items: center;
+
+        .auth-btn {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

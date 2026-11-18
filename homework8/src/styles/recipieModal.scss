@@ -1,0 +1,96 @@
+// Recipe detail modal styles — intentionally no transitions/keyframes/transform/opacity
+// animations so the modal toggles instantly.
+.recipie-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+
+.recipie-modal-content {
+  position: relative;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 40px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 85vh;
+  overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+
+  &::-webkit-scrollbar {
+    /* Webkit (Chrome, Safari, Edge) */
+    display: none;
+  }
+
+  .recipie-modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    border: none;
+    background: transparent;
+    font-size: 28px;
+    line-height: 1;
+    color: #000;
+    cursor: pointer;
+  }
+
+  .recipie-modal-image {
+    width: 100%;
+    max-height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 16px;
+  }
+
+  .recipie-modal-title {
+    font-family: "Caveat Variable", cursive, sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: #000;
+    margin-bottom: 8px;
+  }
+
+  .recipie-modal-description {
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.75);
+    margin-bottom: 16px;
+  }
+
+  .recipie-modal-meta {
+    display: flex;
+    gap: 16px;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.65);
+    margin-bottom: 24px;
+  }
+
+  h3 {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    color: #000;
+    margin-bottom: 12px;
+  }
+
+  .recipie-modal-ingredients,
+  .recipie-modal-instructions {
+    font-family: Inter, sans-serif;
+    font-size: 15px;
+    color: #000;
+    padding-left: 24px;
+    margin-bottom: 24px;
+
+    li {
+      margin-bottom: 8px;
+    }
+  }
+}

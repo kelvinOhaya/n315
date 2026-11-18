@@ -1,0 +1,74 @@
+.underline {
+  border-bottom: 2px solid black;
+}
+
+.navbar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px 32px;
+
+  .links {
+    display: flex;
+    gap: 42px;
+    justify-content: space-between;
+    a {
+      color: black;
+      font-family: Caveat Variable;
+      font-size: 25px;
+      letter-spacing: 10%;
+      text-decoration: none;
+    }
+    .button {
+      background-color: var(--yellow);
+      padding: 8px 48px;
+      border-radius: 26px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.16);
+      transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      &:active {
+        transform: translateY(1px);
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.14);
+      }
+    }
+  }
+
+  .mobile-links {
+    // background-color: yellow;
+    button {
+      background: transparent;
+      border: none;
+    }
+    position: relative;
+    .menu-icon {
+      font-size: 25px;
+    }
+  }
+}
+
+.mobile-navbar-dropdown {
+  // background-color is set dynamically via the navbar(bgColor) argument
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  width: 100vw;
+  gap: 8px;
+  padding: 25px 0;
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-family: Caveat Variable;
+    font-size: 25px;
+    text-align: right;
+    padding-right: 30px;
+  }
+}
